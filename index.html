@@ -1,291 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Anuja Lakde | BI Developer</title>
 
   <style>
-/* GLOBAL */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #ffffff;
-  color: #000;
-}
+    /* GLOBAL */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #000;
+    }
 
-a { text-decoration: none; color: inherit; }
+    a { text-decoration: none; color: inherit; }
 
-/* NAVBAR */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 22px 50px;
-  background: #fff;
-  border-bottom: 1px solid #e6e6e6;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
+    /* NAVBAR */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 50px;
+      background: #fff;
+      border-bottom: 1px solid #e6e6e6;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
 
-.logo {
-  font-size: 26px;
-  font-weight: bold;
-}
+    .logo {
+      font-size: 26px;
+      font-weight: bold;
+    }
 
-.menu a {
-  margin: 0 16px;
-  font-size: 16px;
-  font-weight: 500;
-}
+    .menu a {
+      margin: 0 16px;
+      font-size: 16px;
+      font-weight: 500;
+    }
 
-.nav-btn {
-  padding: 10px 20px;
-  background: #000;
-  color: #fff;
-  border-radius: 6px;
-  font-weight: bold;
-}
+    .nav-btn {
+      padding: 10px 20px;
+      background: #000;
+      color: #fff;
+      border-radius: 6px;
+      font-weight: bold;
+    }
 
-/* HERO SECTION */
-.hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 70px 80px;
-  flex-wrap: wrap;
-  background: #ffffff;    /* Section Shade 1 */
-}
+    /* HERO SECTION */
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 70px 80px;
+      flex-wrap: wrap;
+      background: #ffffff; /* shade 1 */
+    }
 
-.hero-text {
-  max-width: 550px;
-}
+    .hero-text {
+      max-width: 550px;
+    }
 
-.hero-text h1 {
-  font-size: 44px;
-  line-height: 1.2;
-  margin-bottom: 18px;
-}
+    .hero-text h1 {
+      font-size: 44px;
+      line-height: 1.2;
+      margin-bottom: 18px;
+    }
 
-.hero-text p {
-  font-size: 18px;
-  opacity: 0.8;
-  margin-bottom: 25px;
-}
+    .hero-text p {
+      font-size: 18px;
+      opacity: 0.8;
+      margin-bottom: 25px;
+    }
 
-.btn-primary {
-  background: #000;
-  color: #fff;
-  padding: 12px 26px;
-  font-size: 16px;
-  border-radius: 6px;
-  cursor: pointer;
-  display: inline-block;
-}
+    .btn-primary {
+      background: #000;
+      color: #fff;
+      padding: 12px 26px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      display: inline-block;
+    }
 
-.hero-img img {
-  width: 360px;
-  border-radius: 18px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
+    .hero-img img {
+      width: 360px;
+      border-radius: 18px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
 
-/* SECTION BASE */
-.section {
-  padding: 70px 80px;
-}
+    /* SECTION BASE */
+    .section {
+      padding: 70px 80px;
+    }
 
-.section h2 {
-  font-size: 32px;
-  margin-bottom: 22px;
-}
+    .section h2 {
+      font-size: 32px;
+      margin-bottom: 22px;
+    }
 
-.section p {
-  font-size: 18px;
-  max-width: 850px;
-  line-height: 1.5;
-  opacity: 0.85;
-}
+    .section p {
+      font-size: 18px;
+      max-width: 850px;
+      line-height: 1.5;
+      opacity: 0.85;
+    }
 
-/* SECTION BACKGROUND SHADES */
-#about      { background: #f9f9f9; }  /* light */
-#skills     { background: #f4f4f4; }  /* slightly darker */
-#work       { background: #efefef; }  /* work/projects */
-#experience { background: #e9e9e9; }  /* darker shade */
-#contact    { background: #f9f9f9; }  /* reset lighter */
+    /* SECTION BACKGROUND SHADES */
+    #about      { background: #f9f9f9; } /* light */
+    #skills     { background: #f4f4f4; }
+    #work       { background: #efefef; }
+    #experience { background: #e9e9e9; }
+    #contact    { background: #f9f9f9; }
 
-/* SKILLS */
-.skills span {
-  display: inline-block;
-  margin: 8px;
-  padding: 8px 16px;
-  font-size: 14px;
-  border: 1px solid #000;
-  border-radius: 5px;
-}
+    /* SKILLS */
+    .skills span {
+      display: inline-block;
+      margin: 8px;
+      padding: 8px 16px;
+      font-size: 14px;
+      border: 1px solid #000;
+      border-radius: 5px;
+    }
 
-/* WORK / PROJECTS SECTION */
-.projects {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
+    /* WORK / PROJECTS SECTION */
+    .projects {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
 
-.proj-card {
-  background: #fff;
-  border: 1px solid #ccc;
-  padding: 20px;
-  width: 30%;
-  min-width: 260px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
+    .proj-card {
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 20px;
+      width: 30%;
+      min-width: 260px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
 
-.proj-card h3 { margin: 0 0 10px; font-size: 20px; }
+    .proj-card h3 {
+      margin: 0 0 10px;
+      font-size: 20px;
+    }
 
-.proj-card p {
-  opacity: 0.8;
-  margin-bottom: 12px;
-}
+    .proj-card p {
+      opacity: 0.8;
+      margin-bottom: 12px;
+    }
 
-.proj-card a {
-  font-weight: bold;
-  color: #000;
-  border-bottom: 2px solid #000;
-}
+    .proj-card a {
+      font-weight: bold;
+      color: #000;
+      border-bottom: 2px solid #000;
+    }
 
-/* EXPERIENCE */
-.exp-card {
-  background: #fafafa;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 14px;
-  border-left: 4px solid #000;
-}
+    /* EXPERIENCE */
+    .exp-card {
+      background: #fafafa;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 14px;
+      border-left: 4px solid #000;
+    }
 
-.exp-card h3 { margin: 0; font-size: 20px; }
-.exp-card p { margin: 6px 0; opacity: 0.7; }
+    .exp-card h3 {
+      margin: 0;
+      font-size: 20px;
+    }
 
-/* CONTACT */
-.contact a {
-  display: block;
-  margin: 8px 0;
-  color: #000;
-  font-size: 18px;
-}
+    .exp-card p {
+      margin: 6px 0;
+      opacity: 0.7;
+    }
 
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #f7f7f7;
-  font-size: 14px;
-  margin-top: 40px;
-}
+    /* CONTACT */
+    .contact a {
+      display: block;
+      margin: 8px 0;
+      color: #000;
+      font-size: 18px;
+    }
 
-/* RESPONSIVE */
-@media(max-width: 900px) {
-  .hero { flex-direction: column-reverse; text-align: center; }
-  .hero-img img { width: 260px; }
-  .section { padding: 50px; }
-  .projects { flex-direction: column; }
-  .proj-card { width: 100%; }
-}
-</style>
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f7f7f7;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+      .hero-img img {
+        width: 260px;
+      }
+      .section {
+        padding: 50px;
+      }
+      .projects {
+        flex-direction: column;
+      }
+      .proj-card {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 
 <body>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">Anuja Lakde</div>
+    <div class="menu">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="#contact" class="nav-btn">Contact</a>
+  </nav>
 
-<!-- NAVBAR -->
-<nav>
-  <div class="logo">Anuja Lakde</div>
-  <div class="menu">
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#experience">Experience</a>
-    <a href="#contact">Contact</a>
-  </div>
-  <a href="#contact" class="nav-btn">Contact</a>
-</nav>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Hello, I’m Anuja Lakde</h1>
+      <p>
+        Business Intelligence Developer & Data Analyst, helping organizations
+        transform raw data into meaningful insights using Power BI, SQL, Excel,
+        Power Query and cloud analytics.
+      </p>
+      <a href="#contact" class="btn-primary">Say Hello!</a>
+    </div>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-text">
-    <h1>Hello, I’m Anuja Lakde</h1>
+    <div class="hero-img">
+      <img src="1699391705311%20(1).jpg" alt="Anuja Lakde Photo" />
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
     <p>
-      Business Intelligence Developer & Data Analyst, helping organizations
-      transform raw data into meaningful insights using Power BI, SQL, Excel,
-      Power Query and cloud analytics.
+      I am a results-driven BI Developer with 3+ years of experience in dashboards,
+      reporting, data modelling and visual storytelling. Currently pursuing my MSc
+      Data Science at the University of Chester, United Kingdom.
     </p>
-    <a href="#contact" class="btn-primary">Say Hello!</a>
-  </div>
+  </section>
 
-  <div class="hero-img">
-  <img src="1699391705311%20(1).jpg" alt="Anuja Lakde Photo">
-</div>
-</section>
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <h2>Technical Skills</h2>
+    <div class="skills">
+      <span>Power BI</span>
+      <span>SQL</span>
+      <span>Power Query</span>
+      <span>Data Models</span>
+      <span>Excel</span>
+      <span>Python</span>
+      <span>Dashboards</span>
+      <span>Data Visualization</span>
+      <span>Cloud Solutions</span>
+    </div>
+  </section>
 
-<!-- ABOUT -->
-<section id="about" class="section">
-  <h2>About Me</h2>
-  <p>
-    I am a results-driven BI Developer with 3+ years of experience in dashboards,
-    reporting, data modelling and visual storytelling. Currently pursuing my MSc
-    Data Science at the University of Chester, United Kingdom.
-  </p>
-</section>
+  <!-- WORK / PROJECTS -->
+  <section id="work" class="section">
+    <h2>My Work</h2>
+    <p>Some of the dashboards and analytics solutions I have built.</p>
 
-<!-- SKILLS -->
-<section id="skills" class="section">
-  <h2>Technical Skills</h2>
-  <div class="skills">
-    <span>Power BI</span><span>SQL</span><span>Power Query</span>
-    <span>Data Models</span><span>Excel</span><span>Python</span>
-    <span>Dashboards</span><span>Data Visualization</span><span>Cloud Solutions</span>
-  </div>
-</section>
+    <div class="projects">
+      <div class="proj-card">
+        <h3>Sales Performance Dashboard</h3>
+        <p>Power BI dashboard to track revenue, region-wise performance and key KPIs.</p>
+        <a href="#">View Dashboard</a>
+      </div>
 
-<!-- EXPERIENCE -->
-<section id="experience" class="section">
-  <h2>Experience</h2>
+      <div class="proj-card">
+        <h3>Customer Retention Analytics</h3>
+        <p>SQL + Power BI model to identify churn risk and retention patterns.</p>
+        <a href="#">View Project</a>
+      </div>
 
-  <div class="exp-card">
-    <h3>MSc Data Science — University of Chester</h3>
-    <p>2024 – Present | United Kingdom</p>
-  </div>
+      <div class="proj-card">
+        <h3>HR Analytics Report</h3>
+        <p>Visualization solution analyzing hiring metrics and employee lifecycle.</p>
+        <a href="#">View Report</a>
+      </div>
+    </div>
+  </section>
 
-  <div class="exp-card">
-    <h3>Power BI Developer — Namasys Analytics</h3>
-    <p>Sep 2023 – Oct 2024</p>
-  </div>
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <h2>Experience</h2>
 
-  <div class="exp-card">
-    <h3>BI Developer — 9A Business Connect Pvt Ltd</h3>
-    <p>Jun 2022 – Sep 2023</p>
-  </div>
+    <div class="exp-card">
+      <h3>MSc Data Science — University of Chester</h3>
+      <p>2024 – Present | United Kingdom</p>
+    </div>
 
-  <div class="exp-card">
-    <h3>Power BI Developer — NSEIT Limited</h3>
-    <p>Jan 2022 – Jun 2022</p>
-  </div>
+    <div class="exp-card">
+      <h3>Power BI Developer — Namasys Analytics</h3>
+      <p>Sep 2023 – Oct 2024</p>
+    </div>
 
-  <div class="exp-card">
-    <h3>Cloud Engineer — Cloudstrats</h3>
-    <p>Jun 2021 – Dec 2021</p>
-  </div>
-</section>
+    <div class="exp-card">
+      <h3>BI Developer — 9A Business Connect Pvt Ltd</h3>
+      <p>Jun 2022 – Sep 2023</p>
+    </div>
 
-<!-- CONTACT -->
-<section id="contact" class="section contact">
-  <h2>Contact</h2>
-  <a href="mailto:anujalakde@gmail.com">📧 Email: anujalakde@gmail.com</a>
-  <a href="https://www.linkedin.com/in/anujalakde/" target="_blank">💼 LinkedIn</a>
-  <a href="https://github.com/BuildWithAnuja" target="_blank">🐙 GitHub</a>
-</section>
+    <div class="exp-card">
+      <h3>Power BI Developer — NSEIT Limited</h3>
+      <p>Jan 2022 – Jun 2022</p>
+    </div>
 
-<footer>
-  © 2025 Anuja Lakde · Built with ❤️ & Hosted on GitHub Pages
-</footer>
+    <div class="exp-card">
+      <h3>Cloud Engineer — Cloudstrats</h3>
+      <p>Jun 2021 – Dec 2021</p>
+    </div>
+  </section>
 
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <h2>Contact</h2>
+    <a href="mailto:anujalakde@gmail.com">📧 Email: anujalakde@gmail.com</a>
+    <a href="https://www.linkedin.com/in/anujalakde/" target="_blank">💼 LinkedIn</a>
+    <a href="https://github.com/BuildWithAnuja" target="_blank">🐙 GitHub</a>
+  </section>
+
+  <footer>
+    © 2025 Anuja Lakde · Built with ❤️ & Hosted on GitHub Pages
+  </footer>
 </body>
 </html>
