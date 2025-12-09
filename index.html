@@ -60,37 +60,44 @@
   color: #fff; /* ensures text stays readable */
 }
 
-    .hero-text {
-      max-width: 550px;
-    }
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 80px 50px;
+  background: url('Div%201%20background.webp') center/cover no-repeat;
+  text-align: center;
+}
 
-    .hero-text h1 {
-      font-size: 44px;
-      line-height: 1.2;
-      margin-bottom: 18px;
-    }
+/* LEFT & RIGHT TEXT BOXES */
+.hero-left, .hero-right {
+  max-width: 350px;
+  font-size: 18px;
+  color: #fff;
+}
 
-    .hero-text p {
-      font-size: 18px;
-      opacity: 0.8;
-      margin-bottom: 25px;
-    }
+/* PHOTO IN CENTER */
+.hero-photo img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;          /* makes it round */
+  object-fit: cover;           /* ensures proper cropping */
+  border: 6px solid #fff;      /* white ring */
+  box-shadow: 0 4px 25px rgba(0,0,0,0.4);
+  background: #fff;
+}
 
-    .btn-primary {
-      background: #000;
-      color: #fff;
-      padding: 12px 26px;
-      font-size: 16px;
-      border-radius: 6px;
-      cursor: pointer;
-      display: inline-block;
-    }
-
-    .hero-img img {
-      width: 360px;
-      border-radius: 18px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    }
+/* BUTTON */
+.btn-primary {
+  background: #902923;
+  color: #fff;
+  padding: 14px 30px;
+  font-size: 18px;
+  border-radius: 8px;
+  display: inline-block;
+  font-weight: bold;
+}
 
     /* SECTION BASE */
     .section {
