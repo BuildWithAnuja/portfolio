@@ -3,149 +3,216 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anuja Lakde | Portfolio</title>
+  <title>Anuja Lakde | BI Developer</title>
+
   <style>
+    /* GLOBAL */
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #0d0d0d;
-      color: #fff;
+      background: #ffffff;
+      color: #000;
     }
-    header {
-      background: #101820;
-      padding: 30px 50px;
+
+    a { text-decoration: none; color: inherit; }
+
+    /* NAVBAR */
+    nav {
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      align-items: center;
+      padding: 22px 50px;
+      background: #fff;
+      border-bottom: 1px solid #e6e6e6;
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
-    .name {
-      font-size: 32px;
+
+    .logo {
+      font-size: 26px;
       font-weight: bold;
-      color: #ffca3a;
     }
-    nav a {
-      margin: 0 15px;
-      color: #fff;
-      text-decoration: none;
+
+    .menu a {
+      margin: 0 16px;
       font-size: 16px;
-      transition: 0.3s;
+      font-weight: 500;
     }
-    nav a:hover { color: #ffca3a; }
 
+    .nav-btn {
+      padding: 10px 20px;
+      background: #000;
+      color: #fff;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    /* HERO SECTION */
     .hero {
-      padding: 90px 50px;
-      text-align: center;
-      background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
-    }
-    .hero h1 {
-      font-size: 42px;
-      margin-bottom: 15px;
-      color: #ffca3a;
-    }
-    .hero p {
-      font-size: 20px;
-      opacity: 0.85;
-      max-width: 700px;
-      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 70px 80px;
+      flex-wrap: wrap;
     }
 
+    .hero-text {
+      max-width: 550px;
+    }
+
+    .hero-text h1 {
+      font-size: 44px;
+      line-height: 1.2;
+      margin-bottom: 18px;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      opacity: 0.8;
+      margin-bottom: 25px;
+    }
+
+    .btn-primary {
+      background: #000;
+      color: #fff;
+      padding: 12px 26px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    .hero-img img {
+      width: 360px;
+      border-radius: 18px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    /* SECTION BASE */
     .section {
-      padding: 60px 50px;
-    }
-    .section h2 {
-      font-size: 30px;
-      margin-bottom: 20px;
-      color: #ffca3a;
+      padding: 70px 80px;
     }
 
+    .section h2 {
+      font-size: 32px;
+      margin-bottom: 22px;
+    }
+
+    /* ABOUT */
+    .section p {
+      font-size: 18px;
+      max-width: 850px;
+      line-height: 1.5;
+      opacity: 0.85;
+    }
+
+    /* SKILLS */
     .skills span {
       display: inline-block;
       margin: 8px;
-      background: #202020;
-      padding: 8px 14px;
-      border-radius: 6px;
-      border: 1px solid #ffca3a;
+      padding: 8px 16px;
       font-size: 14px;
+      border: 1px solid #000;
+      border-radius: 5px;
     }
 
+    /* EXPERIENCE */
     .exp-card {
-      background: #1a1a1a;
+      background: #fafafa;
       padding: 20px;
       border-radius: 10px;
-      margin-bottom: 15px;
-      border-left: 4px solid #ffca3a;
+      margin-bottom: 14px;
+      border-left: 4px solid #000;
     }
-    .exp-card h3 { margin: 0; color: #ffca3a; }
-    .exp-card p { margin: 5px 0; opacity: 0.8; }
 
+    .exp-card h3 { margin: 0; font-size: 20px; }
+    .exp-card p { margin: 6px 0; opacity: 0.7; }
+
+    /* CONTACT */
     .contact a {
       display: block;
       margin: 8px 0;
-      color: #ffca3a;
-      text-decoration: none;
+      color: #000;
+      font-size: 18px;
     }
+
+    /* FOOTER */
     footer {
       text-align: center;
       padding: 20px;
-      background: #101820;
-      opacity: 0.8;
+      background: #f7f7f7;
+      font-size: 14px;
       margin-top: 40px;
+    }
+
+    /* RESPONSIVE */
+    @media(max-width: 900px) {
+      .hero { flex-direction: column-reverse; text-align: center; }
+      .hero-img img { width: 260px; }
+      .section { padding: 50px; }
     }
   </style>
 </head>
+
 <body>
 
-<header>
-  <div class="name">Anuja Lakde</div>
-  <nav>
+<!-- NAVBAR -->
+<nav>
+  <div class="logo">Anuja Lakde</div>
+  <div class="menu">
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#experience">Experience</a>
     <a href="#contact">Contact</a>
-  </nav>
-</header>
+  </div>
+  <a href="#contact" class="nav-btn">Contact</a>
+</nav>
 
+<!-- HERO -->
 <section class="hero">
-  <h1>Business Intelligence Developer | Data Analyst</h1>
-  <p>
-    MSc Data Science student with 3+ years of experience in developing 
-    analytics solutions using Power BI, SQL, Excel, Power Query, 
-    and cloud-based tools to drive business insights.
-  </p>
-</section>
+  <div class="hero-text">
+    <h1>Hello, I’m Anuja Lakde</h1>
+    <p>
+      Business Intelligence Developer & Data Analyst, helping organizations
+      transform raw data into meaningful insights using Power BI, SQL, Excel,
+      Power Query and cloud analytics.
+    </p>
+    <a href="#contact" class="btn-primary">Say Hello!</a>
+  </div>
 
-<section id="about" class="section">
-  <h2>About Me</h2>
-  <p>
-    I am a results-driven BI Developer skilled in building dashboards, 
-    automating reports, and analyzing business data. I enjoy transforming 
-    complex datasets into compelling visual stories that support 
-    strategic decisions.
-  </p>
-</section>
-
-<section id="skills" class="section">
-  <h2>Technical Skills</h2>
-  <div class="skills">
-    <span>Power BI</span>
-    <span>Data Models</span>
-    <span>SQL</span>
-    <span>Power Query</span>
-    <span>MS Excel</span>
-    <span>Python</span>
-    <span>Dashboards</span>
-    <span>Data Visualization</span>
-    <span>Cloud Solutions</span>
+  <div class="hero-img">
+    <img src="https://via.placeholder.com/360x450" alt="Profile Photo">
   </div>
 </section>
 
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>
+    I am a results-driven BI Developer with 3+ years of experience in dashboards,
+    reporting, data modelling and visual storytelling. Currently pursuing my MSc
+    Data Science at the University of Chester, United Kingdom.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <span>Power BI</span><span>SQL</span><span>Power Query</span>
+    <span>Data Models</span><span>Excel</span><span>Python</span>
+    <span>Dashboards</span><span>Data Visualization</span><span>Cloud Solutions</span>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
 <section id="experience" class="section">
   <h2>Experience</h2>
 
   <div class="exp-card">
-    <h3>MSc Data Science</h3>
-    <p>University of Chester | 2024 - Present</p>
+    <h3>MSc Data Science — University of Chester</h3>
+    <p>2024 – Present | United Kingdom</p>
   </div>
 
   <div class="exp-card">
@@ -169,6 +236,7 @@
   </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact" class="section contact">
   <h2>Contact</h2>
   <a href="mailto:anujalakde@gmail.com">📧 Email: anujalakde@gmail.com</a>
