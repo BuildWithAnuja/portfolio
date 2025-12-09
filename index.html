@@ -1,10 +1,184 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Test Page</title>
-  </head>
-  <body>
-    <h1>Hello Anuja 👋</h1>
-    <p>Your GitHub Pages is working!</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anuja Lakde | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0d0d0d;
+      color: #fff;
+    }
+    header {
+      background: #101820;
+      padding: 30px 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+    .name {
+      font-size: 32px;
+      font-weight: bold;
+      color: #ffca3a;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+    nav a:hover { color: #ffca3a; }
+
+    .hero {
+      padding: 90px 50px;
+      text-align: center;
+      background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+    }
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+      color: #ffca3a;
+    }
+    .hero p {
+      font-size: 20px;
+      opacity: 0.85;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .section {
+      padding: 60px 50px;
+    }
+    .section h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+      color: #ffca3a;
+    }
+
+    .skills span {
+      display: inline-block;
+      margin: 8px;
+      background: #202020;
+      padding: 8px 14px;
+      border-radius: 6px;
+      border: 1px solid #ffca3a;
+      font-size: 14px;
+    }
+
+    .exp-card {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      border-left: 4px solid #ffca3a;
+    }
+    .exp-card h3 { margin: 0; color: #ffca3a; }
+    .exp-card p { margin: 5px 0; opacity: 0.8; }
+
+    .contact a {
+      display: block;
+      margin: 8px 0;
+      color: #ffca3a;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #101820;
+      opacity: 0.8;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="name">Anuja Lakde</div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Business Intelligence Developer | Data Analyst</h1>
+  <p>
+    MSc Data Science student with 3+ years of experience in developing 
+    analytics solutions using Power BI, SQL, Excel, Power Query, 
+    and cloud-based tools to drive business insights.
+  </p>
+</section>
+
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>
+    I am a results-driven BI Developer skilled in building dashboards, 
+    automating reports, and analyzing business data. I enjoy transforming 
+    complex datasets into compelling visual stories that support 
+    strategic decisions.
+  </p>
+</section>
+
+<section id="skills" class="section">
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <span>Power BI</span>
+    <span>Data Models</span>
+    <span>SQL</span>
+    <span>Power Query</span>
+    <span>MS Excel</span>
+    <span>Python</span>
+    <span>Dashboards</span>
+    <span>Data Visualization</span>
+    <span>Cloud Solutions</span>
+  </div>
+</section>
+
+<section id="experience" class="section">
+  <h2>Experience</h2>
+
+  <div class="exp-card">
+    <h3>MSc Data Science</h3>
+    <p>University of Chester | 2024 - Present</p>
+  </div>
+
+  <div class="exp-card">
+    <h3>Power BI Developer — Namasys Analytics</h3>
+    <p>Sep 2023 – Oct 2024</p>
+  </div>
+
+  <div class="exp-card">
+    <h3>BI Developer — 9A Business Connect Pvt Ltd</h3>
+    <p>Jun 2022 – Sep 2023</p>
+  </div>
+
+  <div class="exp-card">
+    <h3>Power BI Developer — NSEIT Limited</h3>
+    <p>Jan 2022 – Jun 2022</p>
+  </div>
+
+  <div class="exp-card">
+    <h3>Cloud Engineer — Cloudstrats</h3>
+    <p>Jun 2021 – Dec 2021</p>
+  </div>
+</section>
+
+<section id="contact" class="section contact">
+  <h2>Contact</h2>
+  <a href="mailto:anujalakde@gmail.com">📧 Email: anujalakde@gmail.com</a>
+  <a href="https://www.linkedin.com/in/anujalakde/" target="_blank">💼 LinkedIn</a>
+  <a href="https://github.com/BuildWithAnuja" target="_blank">🐙 GitHub</a>
+</section>
+
+<footer>
+  © 2025 Anuja Lakde · Built with ❤️ & Hosted on GitHub Pages
+</footer>
+
+</body>
 </html>
